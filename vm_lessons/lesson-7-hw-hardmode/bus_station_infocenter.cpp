@@ -122,9 +122,9 @@ void Print_Bus_Schedule(sBusSchedule bus_schedule) {
 }
 
 void Print_Destinations(sBusSchedule bus_schedule[], int size) {
-	cout << endl << "##################################" << endl;
+	cout << endl << "########################" << endl;
 	cout <<         "Available Destinations: " << endl;
-	cout <<         "##################################" << endl;
+	cout <<         "########################" << endl;
 
 	for (int i = 0; i < size; i++) {
 		cout << "[" << i << "]: " << destinations[bus_schedule[i].destination].destination_name << endl;
@@ -134,9 +134,9 @@ void Print_Destinations(sBusSchedule bus_schedule[], int size) {
 void List_Suitable_Buses(sBusSchedule bus_schedule, tm time) {
 	char time_buffer[6];
 
-	cout << endl << "##################################" << endl;
+	cout << endl << "################" << endl;
 	cout <<         "Suitable Buses: " << endl;
-	cout <<         "##################################" << endl;
+	cout <<         "################" << endl;
 	for (int i = 0; i < bus_schedule.size; i++) {
 		if ((bus_schedule.buses[i].arrival_time.tm_hour == time.tm_hour &&
 			 bus_schedule.buses[i].arrival_time.tm_min > time.tm_min)   ||
