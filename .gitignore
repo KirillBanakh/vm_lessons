@@ -349,3 +349,4 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 vm_lessons/lesson-7-hw-hardmode/Bus_Shedule.txt
+vm_lessons/lesson-7-4-hardmode/Book_List.txt
