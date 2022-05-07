@@ -6,6 +6,8 @@ using namespace std;
 
 int main()
 {
+    FILE* bus_schedule_file = NULL;
+
     sBusSchedule bus_schedule[eDestinations_Last];
     int destination;
     tm arrival_time;
@@ -19,6 +21,12 @@ int main()
     Generate_Random_Bus_Schedule(&bus_schedule[0], 10);
     Generate_Random_Bus_Schedule(&bus_schedule[1], 10);
     Generate_Random_Bus_Schedule(&bus_schedule[2], 10);
+
+    Create_Bus_Schedule_File(bus_schedule_file);
+
+    Save_Bus_Schedule_To_File(bus_schedule_file, bus_schedule[0], 10);
+    Save_Bus_Schedule_To_File(bus_schedule_file, bus_schedule[1], 10);
+    Save_Bus_Schedule_To_File(bus_schedule_file, bus_schedule[2], 10);
 
     Print_Bus_Schedule(bus_schedule[0]);
     Print_Bus_Schedule(bus_schedule[1]);
