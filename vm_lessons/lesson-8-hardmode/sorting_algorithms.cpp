@@ -64,6 +64,25 @@ void Selection_Sort(int* array, int size) {
 	cout << "Selection sort execution time: " << end - start << endl;
 }
 
-void Insertion_Sort(int* array, int size) {}
+void Insertion_Sort(int* array, int size) {
+	clock_t start, end;
+	start = clock();
+
+	cout << "----------------------------" << endl;
+	cout << "| Insertion Sort Algorithm |" << endl;
+	cout << "----------------------------" << endl;
+
+	int j;
+	for (int i = 1; i <= size - 1; i++) {
+		j = i;
+		while (array[j] < array[j - 1] && j >= 1) {
+			swap(array[j], array[j - 1]);
+			j--;
+		}
+	}
+
+	end = clock();
+	cout << "Selection sort execution time: " << end - start << endl;
+}
 void Shell_Sort(int* array, int size) {}
 void Quick_Sort(int* array, int size) {}
