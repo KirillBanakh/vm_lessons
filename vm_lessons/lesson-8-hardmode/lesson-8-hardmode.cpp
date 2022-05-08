@@ -23,7 +23,17 @@ int main()
 		my_array[i] = rand() % 100;
 	}
 
-	if (show_arrays) Print_Array(my_array, array_size);
+	if (show_arrays) {
+		cout << "------------------" << endl;
+		cout << "| Unsorted Array |" << endl;
+		cout << "------------------" << endl;
+		Print_Array(my_array, array_size);
+	}
+	else {
+		cout << "-------------------" << endl;
+		cout << "| Array Generated |" << endl;
+		cout << "-------------------" << endl;
+	}
 	
 	memcpy_s(my_array_copy, array_size * sizeof(int), my_array, array_size * sizeof(int));
 	Bubble_Sort(my_array_copy, array_size);
@@ -39,6 +49,10 @@ int main()
 
 	memcpy_s(my_array_copy, array_size * sizeof(int), my_array, array_size * sizeof(int));
 	Shell_Sort(my_array_copy, array_size);
+	if (show_arrays) Print_Array(my_array_copy, array_size);
+
+	memcpy_s(my_array_copy, array_size * sizeof(int), my_array, array_size * sizeof(int));
+	Quick_Sort(my_array_copy, array_size);
 	if (show_arrays) Print_Array(my_array_copy, array_size);
 
 	return 0;

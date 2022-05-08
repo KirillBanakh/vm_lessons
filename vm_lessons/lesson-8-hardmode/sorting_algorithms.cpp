@@ -1,6 +1,10 @@
 #include "sorting_algorithms.h"
 #include <cstdio>
 #include <iostream>
+#include <Windows.h>
+
+#define DEFAULT_COLOR 15
+#define GREEN_COLOR 2
 
 using namespace std;
 
@@ -18,8 +22,11 @@ void Print_Array(int* array, int size) {
 }
 
 void Bubble_Sort(int* array, int size) {
-	clock_t start, end;
+	HANDLE console_color;
+	console_color = GetStdHandle(STD_OUTPUT_HANDLE);
 	
+	clock_t start, end;
+
 	cout << "-------------------------" << endl;
 	cout << "| Bubble Sort Algorithm |" << endl;
 	cout << "-------------------------" << endl;
@@ -35,12 +42,16 @@ void Bubble_Sort(int* array, int size) {
 	}
 	
 	end = clock();
-	
+	SetConsoleTextAttribute(console_color, GREEN_COLOR);
 	cout << "Bubble sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, DEFAULT_COLOR);
 }
 
 
 void Selection_Sort(int* array, int size) {
+	HANDLE console_color;
+	console_color = GetStdHandle(STD_OUTPUT_HANDLE);
+	
 	clock_t start, end;
 	int k, j;
 
@@ -60,11 +71,15 @@ void Selection_Sort(int* array, int size) {
 	}
 
 	end = clock();
-
+	SetConsoleTextAttribute(console_color, GREEN_COLOR);
 	cout << "Selection sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, DEFAULT_COLOR);
 }
 
 void Insertion_Sort(int* array, int size) {
+	HANDLE console_color;
+	console_color = GetStdHandle(STD_OUTPUT_HANDLE);
+	
 	clock_t start, end;
 	int j;
 
@@ -83,13 +98,18 @@ void Insertion_Sort(int* array, int size) {
 	}
 
 	end = clock();
+	SetConsoleTextAttribute(console_color, GREEN_COLOR);
 	cout << "Insertion sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, DEFAULT_COLOR);
 }
 
 void Shell_Sort(int* array, int size) {
+	HANDLE console_color;
+	console_color = GetStdHandle(STD_OUTPUT_HANDLE);
+	
 	clock_t start, end;
 	int j, temp, gap;
-	int d[] = { 9, 5, 3, 2, 1 };
+	int spacings[] = { 9, 5, 3, 2, 1 };
 
 	cout << "------------------------" << endl;
 	cout << "| Shell Sort Algorithm |" << endl;
@@ -98,7 +118,7 @@ void Shell_Sort(int* array, int size) {
 	start = clock();
 
 	for (int k = 0; k < 5; k++) {
-		gap = d[k];
+		gap = spacings[k];
 		for (int i = gap; i < size; i++) {
 			temp = array[i];
 			for (j = i - gap; temp < array[j] && j >= 0; j -= gap) {
@@ -109,7 +129,57 @@ void Shell_Sort(int* array, int size) {
 	}
 
 	end = clock();
-	cout << "Selection sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, GREEN_COLOR);
+	cout << "Shell sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, DEFAULT_COLOR);
 }
 
-void Quick_Sort(int* array, int size) {}
+static int Get_Quick_Sort_Borders(int* array, int first_index, int last_index) {
+	int i = first_index - 1;
+	int j = last_index + 1;
+	int border = array[first_index];
+	int temp;
+	
+	while (i < j) {
+		while (array[--j] > border);
+		while (array[++i] < border);
+		
+		if (i < j) {
+			temp = array[j]; 
+			array[j] = array[i]; 
+			array[i] = temp;
+			//swap(array[i], array[j]);
+		}
+	}
+
+	return j;
+}
+
+static void Quick_Sort_Handler(int* array, int first_index, int last_index) {
+	if (first_index < last_index)
+	{
+		int border = Get_Quick_Sort_Borders(array, first_index, last_index);
+		Quick_Sort_Handler(array, first_index, border);
+		Quick_Sort_Handler(array, border + 1, last_index);
+	}
+}
+
+void Quick_Sort(int* array, int size) {
+	HANDLE console_color;
+	console_color = GetStdHandle(STD_OUTPUT_HANDLE);
+	
+	clock_t start, end;
+
+	cout << "------------------------------" << endl;
+	cout << "| Quick(Hoar) Sort Algorithm |" << endl;
+	cout << "------------------------------" << endl;
+	
+	start = clock();
+	
+	Quick_Sort_Handler(array, 0, size - 1);
+
+	end = clock();
+	SetConsoleTextAttribute(console_color, GREEN_COLOR);
+	cout << "Quick(Hoar) sort execution time: " << end - start << endl;
+	SetConsoleTextAttribute(console_color, DEFAULT_COLOR);
+}
