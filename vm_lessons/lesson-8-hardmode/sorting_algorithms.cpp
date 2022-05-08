@@ -83,8 +83,33 @@ void Insertion_Sort(int* array, int size) {
 	}
 
 	end = clock();
+	cout << "Insertion sort execution time: " << end - start << endl;
+}
+
+void Shell_Sort(int* array, int size) {
+	clock_t start, end;
+	int j, temp, gap;
+	int d[] = { 9, 5, 3, 2, 1 };
+
+	cout << "------------------------" << endl;
+	cout << "| Shell Sort Algorithm |" << endl;
+	cout << "------------------------" << endl;
+	
+	start = clock();
+
+	for (int k = 0; k < 5; k++) {
+		gap = d[k];
+		for (int i = gap; i < size; i++) {
+			temp = array[i];
+			for (j = i - gap; temp < array[j] && j >= 0; j -= gap) {
+				array[j + gap] = array[j];
+			}
+			array[j + gap] = temp;
+		}
+	}
+
+	end = clock();
 	cout << "Selection sort execution time: " << end - start << endl;
 }
 
-void Shell_Sort(int* array, int size) {}
 void Quick_Sort(int* array, int size) {}
