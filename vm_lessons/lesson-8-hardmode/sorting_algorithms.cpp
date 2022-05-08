@@ -40,7 +40,30 @@ void Bubble_Sort(int* array, int size) {
 }
 
 
-void Selection_Sort(int* array, int size) {}
+void Selection_Sort(int* array, int size) {
+	clock_t start, end;
+	int k, j;
+
+	cout << "----------------------------" << endl;
+	cout << "| Selection Sort Algorithm |" << endl;
+	cout << "----------------------------" << endl;
+
+	start = clock();
+
+	for (int i = 0; i < size - 1; i++) {
+		for (k = i, j = i + 1; j < size; j++) {
+			if (array[j] < array[k]) {
+				k = j;
+			}
+		}
+		swap(array[k], array[i]);
+	}
+
+	end = clock();
+
+	cout << "Selection sort execution time: " << end - start << endl;
+}
+
 void Insertion_Sort(int* array, int size) {}
 void Shell_Sort(int* array, int size) {}
 void Quick_Sort(int* array, int size) {}

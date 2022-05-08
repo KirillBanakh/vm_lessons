@@ -29,5 +29,9 @@ int main()
 	Bubble_Sort(my_array_copy, array_size);
 	if (show_arrays) Print_Array(my_array_copy, array_size);
 
+	memcpy_s(my_array_copy, array_size * sizeof(int), my_array, array_size * sizeof(int));
+	Selection_Sort(my_array_copy, array_size);
+	if (show_arrays) Print_Array(my_array_copy, array_size);
+
 	return 0;
 }
