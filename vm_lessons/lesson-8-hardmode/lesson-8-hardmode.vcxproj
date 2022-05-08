@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lesson-8-hardmode.cpp" />
+    <ClCompile Include="sorting_algorithms.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sorting_algorithms.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
