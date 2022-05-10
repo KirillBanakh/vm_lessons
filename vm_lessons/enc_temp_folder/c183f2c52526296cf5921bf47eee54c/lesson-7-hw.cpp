@@ -54,7 +54,7 @@ int main()
         std::cout << "Рейс №" << i + 1 << "." << "Время прибытия: "
             << Raspisaniye_avtovokzala[i].vremya_pribitiya.hours << ":" << Raspisaniye_avtovokzala[i].vremya_pribitiya.minutes << std::endl;
         
-        fprintf_s(my_file, "Рейс № %i. Тип автобуса: %s\r\n", i + 1, Raspisaniye_avtovokzala[i].bus_type);
+        fprintf_s(my_file, "Рейс № %i. Тип автобуса: %s", i + 1, Raspisaniye_avtovokzala[i].bus_type);
     }
 
     fclose(my_file);

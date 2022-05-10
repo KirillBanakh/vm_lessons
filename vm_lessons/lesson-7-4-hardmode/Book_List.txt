@@ -1,0 +1,90 @@
+-- Number in List: 1 --
+Registration Number: 42
+Author:              Zakhar Black
+Book Name:           C Programming. Absolut beginners guide
+Publishing Year:     1997
+Publishing House:    Pact
+Number of Pages:     778
+------------------------
+
+-- Number in List: 2 --
+Registration Number: 359
+Author:              Zakhar Puccini
+Book Name:           Computer Fundamentals and Programming in C
+Publishing Year:     1833
+Publishing House:    Harvard
+Number of Pages:     727
+------------------------
+
+-- Number in List: 3 --
+Registration Number: 962
+Author:              Igor Shnaider
+Book Name:           C: The Complete Reference
+Publishing Year:     1822
+Publishing House:    Harvard
+Number of Pages:     991
+------------------------
+
+-- Number in List: 4 --
+Registration Number: 605
+Author:              Gleb Puccini
+Book Name:           C: The Complete Reference
+Publishing Year:     1608
+Publishing House:    Harvard
+Number of Pages:     816
+------------------------
+
+-- Number in List: 5 --
+Registration Number: 719
+Author:              Natalia Antonenko
+Book Name:           Low-Level Programming: C, Assembly, and Program Execution
+Publishing Year:     1712
+Publishing House:    O`Reilly
+Number of Pages:     169
+------------------------
+
+-- Number in List: 6 --
+Registration Number: 913
+Author:              Nikolay Black
+Book Name:           Computer Fundamentals and Programming in C
+Publishing Year:     1862
+Publishing House:    O`Reilly
+Number of Pages:     511
+------------------------
+
+-- Number in List: 7 --
+Registration Number: 323
+Author:              Gleb Portman
+Book Name:           C Programming: A Modern Approach
+Publishing Year:     1625
+Publishing House:    Harvard
+Number of Pages:     453
+------------------------
+
+-- Number in List: 8 --
+Registration Number: 869
+Author:              Zakhar Black
+Book Name:           C: The Complete Reference
+Publishing Year:     1875
+Publishing House:    Apress
+Number of Pages:     359
+------------------------
+
+-- Number in List: 9 --
+Registration Number: 724
+Author:              Nikolay Shnaider
+Book Name:           Hands-on Network Programming with C
+Publishing Year:     1999
+Publishing House:    Oxford
+Number of Pages:     690
+------------------------
+
+-- Number in List: 10 --
+Registration Number: 843
+Author:              Valeria White
+Book Name:           C Programming. Absolut beginners guide
+Publishing Year:     1824
+Publishing House:    Pact
+Number of Pages:     248
+------------------------
+

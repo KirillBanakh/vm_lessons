@@ -1,0 +1,159 @@
+#######################
+Destination: Machulishi
+#######################
+Trip Number:   1
+Bus Type:      Eurolines
+Depature Time: 04:56
+Arrival Time:  06:06
+
+Trip Number:   2
+Bus Type:      Ecolines
+Depature Time: 00:19
+Arrival Time:  13:03
+
+Trip Number:   3
+Bus Type:      Ecolines
+Depature Time: 10:08
+Arrival Time:  13:08
+
+Trip Number:   4
+Bus Type:      Ecolines
+Depature Time: 12:16
+Arrival Time:  13:51
+
+Trip Number:   5
+Bus Type:      Eurolines
+Depature Time: 15:40
+Arrival Time:  17:02
+
+Trip Number:   6
+Bus Type:      Eurolines
+Depature Time: 16:51
+Arrival Time:  19:14
+
+Trip Number:   7
+Bus Type:      Ecolines
+Depature Time: 19:32
+Arrival Time:  21:35
+
+Trip Number:   8
+Bus Type:      Eurolines
+Depature Time: 19:44
+Arrival Time:  22:06
+
+Trip Number:   9
+Bus Type:      Eurolines
+Depature Time: 21:21
+Arrival Time:  22:08
+
+Trip Number:   10
+Bus Type:      Eurolines
+Depature Time: 15:41
+Arrival Time:  22:34
+
+#######################
+Destination: Papernya
+#######################
+Trip Number:   1
+Bus Type:      Eurolines
+Depature Time: 05:23
+Arrival Time:  10:18
+
+Trip Number:   2
+Bus Type:      Eurolines
+Depature Time: 03:19
+Arrival Time:  12:42
+
+Trip Number:   3
+Bus Type:      Eurolines
+Depature Time: 14:31
+Arrival Time:  15:04
+
+Trip Number:   4
+Bus Type:      Eurolines
+Depature Time: 16:03
+Arrival Time:  19:53
+
+Trip Number:   5
+Bus Type:      Eurolines
+Depature Time: 01:05
+Arrival Time:  20:52
+
+Trip Number:   6
+Bus Type:      Ecolines
+Depature Time: 11:42
+Arrival Time:  21:09
+
+Trip Number:   7
+Bus Type:      Eurolines
+Depature Time: 19:12
+Arrival Time:  21:32
+
+Trip Number:   8
+Bus Type:      Eurolines
+Depature Time: 09:23
+Arrival Time:  21:50
+
+Trip Number:   9
+Bus Type:      Eurolines
+Depature Time: 04:15
+Arrival Time:  22:05
+
+Trip Number:   10
+Bus Type:      Ecolines
+Depature Time: 07:51
+Arrival Time:  22:46
+
+#######################
+Destination: Pruzhani
+#######################
+Trip Number:   1
+Bus Type:      Ecolines
+Depature Time: 03:05
+Arrival Time:  06:46
+
+Trip Number:   2
+Bus Type:      Ecolines
+Depature Time: 05:58
+Arrival Time:  12:29
+
+Trip Number:   3
+Bus Type:      Ecolines
+Depature Time: 04:48
+Arrival Time:  15:54
+
+Trip Number:   4
+Bus Type:      Ecolines
+Depature Time: 02:41
+Arrival Time:  16:16
+
+Trip Number:   5
+Bus Type:      Eurolines
+Depature Time: 15:38
+Arrival Time:  16:22
+
+Trip Number:   6
+Bus Type:      Ecolines
+Depature Time: 09:00
+Arrival Time:  16:30
+
+Trip Number:   7
+Bus Type:      Eurolines
+Depature Time: 06:32
+Arrival Time:  16:39
+
+Trip Number:   8
+Bus Type:      Eurolines
+Depature Time: 15:25
+Arrival Time:  17:48
+
+Trip Number:   9
+Bus Type:      Eurolines
+Depature Time: 17:08
+Arrival Time:  21:50
+
+Trip Number:   10
+Bus Type:      Eurolines
+Depature Time: 17:58
+Arrival Time:  22:32
+
